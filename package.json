@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "name": "frontend-project-44",
+  "description": "[![Actions Status](https://github.com/dom1howka/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/dom1howka/frontend-project-44/actions)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dom1howka/frontend-project-44.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dom1howka/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/dom1howka/frontend-project-44#readme"
+}
