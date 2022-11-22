@@ -2,6 +2,9 @@
   "dependencies": {
     "http-server": "^14.1.1"
   },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "name": "frontend-project-44",
   "description": "[![Actions Status](https://github.com/dom1howka/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/dom1howka/frontend-project-44/actions)",
   "version": "1.0.0",
@@ -10,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "git+https://github.com/dom1howka/frontend-project-44.git"
   },
   "author": "",
