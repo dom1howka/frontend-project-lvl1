@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "readline-sync": "^1.4.10"
   },
   "bin": {
     "brain-games": "bin/brain-games.js"
@@ -21,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/dom1howka/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/dom1howka/frontend-project-44#readme"
+  "homepage": "https://github.com/dom1howka/frontend-project-44#readme",
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.8.0"
+  }
 }
