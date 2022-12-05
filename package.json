@@ -4,11 +4,14 @@
     "readline-sync": "^1.4.10"
   },
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
+    
   },
   "name": "frontend-project-44",
   "description": "[![Actions Status](https://github.com/dom1howka/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/dom1howka/frontend-project-44/actions)",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +20,7 @@
     "type": "module",
     "url": "git+https://github.com/dom1howka/frontend-project-44.git"
   },
-  "author": "",
+  "author": "Vyacheslav",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dom1howka/frontend-project-44/issues"

@@ -1,9 +1,13 @@
 #!/usr/bin/env node
-install: install-deps
+install: 
+    npm ci
 	npx simple-git-hooks
 
-run:
+brain-games:
 	node bin/brain-games.js
+
+run:
+	
 
 install-deps:
 	npm ci
