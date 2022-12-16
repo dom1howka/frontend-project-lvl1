@@ -1,27 +1,12 @@
-#!/usr/bin/env node
-install: 
-    npm ci
-	npx simple-git-hooks
-
+install:
+	npm ci
 brain-games:
 	node bin/brain-games.js
-
-run:
-	
-
-install-deps:
-	npm ci
-
-test:
-	npm test
-
-test-coverage:
-	npm test -- --coverage --coverageProvider=v8
-
-lint:
-	npx eslint .
-
+brain-even:
+	node bin/brain-even.js
 publish:
 	npm publish --dry-run
-
-.PHONY: test
+lint:
+	npx eslint .
+link:
+	npm link
