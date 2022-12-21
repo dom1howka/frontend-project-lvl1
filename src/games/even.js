@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import basisOfGames from '../index.js';
 import getRandomInt from '../getRandomInt.js';
 
