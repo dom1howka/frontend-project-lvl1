@@ -6,20 +6,17 @@ const basisOfGames = (noteToGame, task) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
 
-  // Вывод на экран задания
+  
   console.log(noteToGame);
 
-  // Начало цикла игры
   for (let i = 0; i < 3; i += 1) {
     const pairOfQuestionAndResult = task();
 
     console.log(`Question: ${pairOfQuestionAndResult[0]}`);
     const answerUser = readlineSync.question('Your answer: ');
 
-    // Константа для правильного ответа
-    const rightAnswer = pairOfQuestionAndResult[1];
 
-    // Сравнение ответа юзера и вычисленного ответа
+    const rightAnswer = pairOfQuestionAndResult[1];
     if (answerUser === rightAnswer) {
       console.log('Correct!');
     } else {

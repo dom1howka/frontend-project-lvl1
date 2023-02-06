@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "http-server": "^14.1.1",
     "readline-sync": "^1.4.10"
   },
   "bin": {
@@ -11,10 +10,9 @@
     
   },
   "name": "frontend-project-44",
-  "description": "[![Actions Status](https://github.com/dom1howka/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/dom1howka/frontend-project-44/actions)",
+  "description": "Brain Games is a set of five console mini-games",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
