@@ -1,7 +1,7 @@
 import basisOfGames from '../index.js';
 import getRandomInt from '../getRandomInt.js';
 
-const calc = () => {
+const runCalcGame = () => {
   // Задание игры
   const noteToCalc = 'What is the result of the expression?';
 
@@ -36,4 +36,4 @@ const calc = () => {
   basisOfGames(noteToCalc, taskCalc);
 };
 
-export default calc;
+export default runCalcGame;
