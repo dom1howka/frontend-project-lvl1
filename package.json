@@ -7,7 +7,6 @@
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
     "brain-progression": "bin/brain-progression"
-    
   },
   "name": "frontend-project-44",
   "description": "Brain Games is a set of five console mini-games",
@@ -27,6 +26,7 @@
   },
   "homepage": "https://github.com/dom1howka/frontend-project-44#readme",
   "devDependencies": {
+    "@types/readline-sync": "^1.4.4",
     "eslint": "^8.28.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
