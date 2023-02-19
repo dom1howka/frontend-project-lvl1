@@ -1,7 +1,7 @@
 import basisOfGames from '../index.js';
 import getRandomInt from '../getRandomInt.js';
 
-const progression = () => {
+const runProgressionGame = () => {
   
   const noteToProgr = 'What number is missing in the progression?';
 
@@ -57,4 +57,4 @@ const progression = () => {
   basisOfGames(noteToProgr, taskProgr);
 };
 
-export default progression;
+export default runProgressionGame;

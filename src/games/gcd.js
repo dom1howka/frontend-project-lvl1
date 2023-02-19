@@ -1,7 +1,7 @@
 import basisOfGames from '../index.js';
 import getRandomInt from '../getRandomInt.js';
 
-const gcd = () => {
+const runGcdGame = () => {
     const noteToGcd = 'Find the greatest common divisor of given numbers.';
 
     const taskGcd = () => {
@@ -21,4 +21,4 @@ const gcd = () => {
     };
     basisOfGames(noteToGcd, taskGcd);
 };
-export default gcd;
+export default runGcdGame;

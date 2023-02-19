@@ -1,7 +1,7 @@
 import basisOfGames from '../index.js';
 import getRandomInt from '../getRandomInt.js';
 
-const evenGame = () => {
+const runEvenGame = () => {
 
   const noteToEven = 'Answer "yes" if the number is even, otherwise answer "no".';
   
@@ -18,4 +18,4 @@ const evenGame = () => {
   basisOfGames(noteToEven, taskEven);
 };
 
-export default evenGame;
+export default runEvenGame;
