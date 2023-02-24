@@ -1,39 +1,38 @@
-import basisOfGames from '../index.js';
+import runEngine from '../index.js';
 import getRandomInt from '../getRandomInt.js';
+  
+const gameRules = 'What is the result of the expression?';
 
-const runCalcGame = () => {
-  // Задание игры
-  const noteToCalc = 'What is the result of the expression?';
+const calculation = (num1, num2, operators) => {
+  let result = ''; 
+  switch (operators) {
+    case '+':
+      result = num1 + num2;
+      break;
+    case '-':
+      result = num1 - num2;
+      break;
+    case '*':
+      result = num1 * num2;
+      break;
+    default:
+      return null;
+  }
+  return result;
+}; 
 
-  // Вводные данные на игру
-  const taskCalc = () => {
-    const number1 = getRandomInt(100);
-    const number2 = getRandomInt(100);
+  const makeRound = () => {
+    const operators = ['+', '-', '*'] 
+    const number1 = getRandomInt(1, 10);
+    const number2 = getRandomInt(1, 10);
+    const getRandomOperator = getRandomInt(0, operators.length - 1) 
 
-    const signs = ['+', '-', '*'];
-    const sign = signs[getRandomInt(2)];
-    const question = `${number1} ${sign} ${number2}`;
-    let result = 0;
-    switch (sign) {
-      case '+':
-        result = number1 + number2;
-        break;
-      case '-':
-        result = number1 - number2;
-        break;
-      case '*':
-        result = number1 * number2;
-        break;
-      default:
-        result = null;
-    }
-
-    result = result.toString();
-
-    return [question, result];
-  };
-
-  basisOfGames(noteToCalc, taskCalc);
+  const question = `${number1} ${operators[getRandomOperator]} ${number2}`;
+  const rightAnswer = String(calculation(number1, number2, operators[getRandomOperator]));
+  return [question, rightAnswer];
 };
+   
+export default () => {
+  runEngine(gameRules, makeRound);
+}
 
-export default runCalcGame;

@@ -1,24 +1,23 @@
-import basisOfGames from '../index.js';
+import runEngine from '../index.js';
 import getRandomInt from '../getRandomInt.js';
 
-const runGcdGame = () => {
-    const noteToGcd = 'Find the greatest common divisor of given numbers.';
+const gameRules =  'Find the greatest common divisor of given numbers.';
 
-    const taskGcd = () => {
-        const number1 = getRandomInt(100);
-        const number2 = getRandomInt(100);
+const findGcd = (num1, num2) => {
+    if (num1 % num2 === 0) {
+        return num2; 
+    }
+        return getGcd(num2, num1 % num2); 
+};
 
+    const getGcd = () => {
+        const number1 = getRandomInt(1, 22);
+        const number2 = getRandomInt(1, 22);
         const question = `${number1} ${number2}`;
-
-        const getGcd = (num1, num2) => {
-            if (num1 % num2 === 0) {
-                return num2; 
-            }
-                return getGcd(num2, num1 % num2); 
-        };
-        const result = getGcd(number1, number2).toString();
+        const result = String(getGcd(number1, number2));
         return [question, result];
     };
-    basisOfGames(noteToGcd, taskGcd);
-};
-export default runGcdGame;
+
+    export default () => {
+        runEngine(gameRules, getGcd);
+      }
