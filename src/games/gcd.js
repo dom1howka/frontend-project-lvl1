@@ -18,5 +18,5 @@ import getRandomInRange from '../getRandomInRange.js';
      return [question, result];
     };
     export default () => {
-        runEngine(gameRules, getGcd);
+     runEngine(gameRules, getGcd);
     };

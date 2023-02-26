@@ -22,5 +22,5 @@ import getRandomInRange from '../getRandomInRange.js';
   };
 
   export default () => {
-    runEngine(gameRules, getPrime);
+   runEngine(gameRules, getPrime);
   };
