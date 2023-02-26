@@ -1,5 +1,5 @@
 // Определение функции, дающее рандомное целое число
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+const getRandomInRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 
-export default getRandomInt;
+export default getRandomInRange;

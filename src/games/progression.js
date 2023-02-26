@@ -1,23 +1,23 @@
 import runEngine from '../index.js';
-import getRandomInt from '../getRandomInt.js';
+import getRandomInRange from '../getRandomInt.js';
 
   const gameRules = 'What number is missing in the progression?';
 
-  const progressionArray = (number, length, step) => {
-    const newArray = [];
-    for (let i = number; newArray.length < length; i += step) {
-      newArray.push(i);
+  const generateProgression = (number, length, step) => {
+    const progression = [];
+    for (let i = number; progression.length < length; i += step) {
+      progression.push(i);
     }
-    return newArray;
+    return progression;
   };
   
   const getProgression = () => {
-    const randomNumber = getRandomInt(1, 10);
-    const rowStep = getRandomInt(1, 5);
-    const arrayLength = getRandomInt(5, 15);
+    const randomNumber = getRandomInRange(1, 10);
+    const rowStep = getRandomInRange(1, 5);
+    const arrayLength = getRandomInRange(5, 15);
   
-    const gameProgression = progressionArray(randomNumber, arrayLength, rowStep);
-    const randomIndex = getRandomInt(0, gameProgression.length - 1);
+    const gameProgression = generateProgression(randomNumber, arrayLength, rowStep);
+    const randomIndex = getRandomInRange(0, gameProgression.length - 1);
   
     const gameAnswer = String(gameProgression[randomIndex]);
   
