@@ -2,7 +2,6 @@ import runEngine from '../index.js';
 import getRandomInRange from '../getRandomInRange.js';
 
     const gameRules =  'Find the greatest common divisor of given numbers.';
-
     const findGcd = (num1, num2) => {
      if (num1 % num2 === 0) {
      return num2; 
@@ -17,6 +16,7 @@ import getRandomInRange from '../getRandomInRange.js';
     const result = String(getGcd(number1, number2));
      return [question, result];
     };
+    
     export default () => {
      runEngine(gameRules, getGcd);
     };

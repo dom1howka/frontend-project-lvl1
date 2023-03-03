@@ -2,7 +2,6 @@ import runEngine from '../index.js';
 import getRandomInRange from '../getRandomInRange.js';
 
   const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
   const isPrime = (num) => {
    if (num < 2) { return false; }
    let i = 2;
@@ -16,9 +15,8 @@ import getRandomInRange from '../getRandomInRange.js';
   const getPrime = () => {
   const number = getRandomInRange(2, 100);
   const question = `${number}`;
-  const result = (isPrime(number) ? 'yes' : 'no');
-
-  return [question, result];
+  const answer = (isPrime(number) ? 'yes' : 'no');
+  return [question, answer];
   };
 
   export default () => {
