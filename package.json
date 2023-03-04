@@ -8,7 +8,7 @@
     "brain-calc": "bin/brain-calc.js",
     "brain-progression": "bin/brain-progression"
   },
-  "name": "frontend-project-44",
+  "name": "@hexlet/code",
   "description": "Brain Games is a set of five console mini-games",
   "version": "1.0.0",
   "type": "module",
@@ -30,6 +30,6 @@
     "eslint": "^8.28.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "prettier": "^2.8.0"
+    "prettier": "^2.8.4"
   }
 }

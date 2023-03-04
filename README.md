@@ -4,7 +4,6 @@
 <h2><b>Description</b></h2>
 <p><i>Brain Games</i> is a set of five console mini-games based on the popular mobile brain-pumping apps.Each game asks questions that need to be answered correctly. After three correct answers the game is considered completed. Wrong answers end the game and prompt you to play again.</p>
 
-
 ## Installation
 
 To run this game make sure you have [Node.js v.16.8.0](https://nodejs.org/en/) or later.
