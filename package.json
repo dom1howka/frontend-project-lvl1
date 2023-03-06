@@ -29,7 +29,7 @@
   "homepage": "https://github.com/dom1howka/frontend-project-44#readme",
   "devDependencies": {
     "@types/readline-sync": "^1.4.4",
-    "eslint": "^8.28.0",
+    "eslint": "^8.35.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "prettier": "^2.8.4"
