@@ -1,5 +1,9 @@
 install:
 	npm ci
+lint:
+	npx eslint
+link:
+	npm link
 brain-games:
 	node bin/brain-games.js
 brain-even:
@@ -14,6 +18,5 @@ brain-prime:
 	node bin/brain-prime.js
 publish:
 	npm publish --dry-run
-lint:
-	npx eslint
+
 
