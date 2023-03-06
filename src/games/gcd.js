@@ -13,7 +13,7 @@ const makeRound = () => {
   const number1 = getRandomInRange(1, 22);
   const number2 = getRandomInRange(1, 22);
   const question = `${number1} ${number2}`;
-  const result = String(makeRound(number1, number2));
+  const result = String(findGcd(number1, number2));
   return [question, result];
 };
 
