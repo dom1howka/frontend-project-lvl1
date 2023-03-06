@@ -1,7 +1,7 @@
-import runEngine from "../index.js";
-import getRandomInRange from "../getRandomInRange.js";
+import runEngine from '../index.js';
+import getRandomInRange from '../getRandomInRange.js';
 
-const gameRules = "What number is missing in the progression?";
+const gameRules = 'What number is missing in the progression?';
 const generateProgression = (number, length, step) => {
   const progression = [];
   for (let i = number; progression.length < length; i += step) {
@@ -17,8 +17,8 @@ const getProgression = () => {
   const progression = generateProgression(randomNumber, lenght, rowStep);
   const randomIndex = getRandomInRange(0, progression.length - 1);
   const answer = String(progression[randomIndex]);
-  progression[randomIndex] = "..";
-  const question = progression.join(" ");
+  progression[randomIndex] = '..';
+  const question = progression.join(' ');
   return [question, answer];
 };
 

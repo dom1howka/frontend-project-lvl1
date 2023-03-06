@@ -1,14 +1,14 @@
-import runEngine from "../index.js";
-import getRandomInRange from "../getRandomInRange.js";
+import runEngine from '../index.js';
+import getRandomInRange from '../getRandomInRange.js';
 
-const gameRules = "What is the result of the expression?";
+const gameRules = 'What is the result of the expression?';
 const calculation = (num1, num2, operator) => {
   switch (operator) {
-    case "+":
+    case '+':
       return num1 + num2;
-    case "-":
+    case '-':
       return num1 - num2;
-    case "*":
+    case '*':
       return num1 * num2;
     default:
       throw new Error(operator`${operator} - is incorrect!`);
@@ -16,13 +16,13 @@ const calculation = (num1, num2, operator) => {
 };
 
 const makeRound = () => {
-  const operator = ["+", "-", "*"];
+  const operator = ['+', '-', '*'];
   const number1 = getRandomInRange(1, 10);
   const number2 = getRandomInRange(1, 10);
   const getRandomOperator = getRandomInRange(0, operator.length - 1);
   const question = `${number1} ${operator[getRandomOperator]} ${number2}`;
   const answer = String(
-    calculation(number1, number2, operator[getRandomOperator])
+    calculation(number1, number2, operator[getRandomOperator]),
   );
   return [question, answer];
 };
